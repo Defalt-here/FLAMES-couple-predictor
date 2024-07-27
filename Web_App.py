@@ -17,6 +17,7 @@ st.set_page_config(
 )
 def main():
     st.title("FLAMES")
+    st.text("Put all the required inputs in integers(no decimals) between 0 to 10 (both inclusive)")
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
     option = st.selectbox(
     "Select your gender?",
@@ -25,16 +26,23 @@ def main():
         gender = 1
     else:
         gender = 0
-    age = st.number_input("Put age")
-    attraction = st.number_input("Put attraction")
-    sincerity = st.number_input("Put sincerity")
-    intelligence = st.number_input("Put intelligence")
-    funny = st.number_input("Put funny")
-    ambition = st.number_input("Put ambition")
-    interests = st.number_input("Put interests")
-    overall = st.number_input("Put overall")
-    reciprocate = st.number_input("Put reciprocate")
-    met = st.number_input("Put met")
+    age = st.number_input("Enter your age")
+    attraction = st.number_input("On a scale of 1-10 how attracted you are to the person1")
+    sincerity = st.number_input("How sincere is the person in question?")
+    intelligence = st.number_input("How intelligent is the person in question")
+    funny = st.number_input("How funny is the person in question")
+    ambition = st.number_input("How ambitious is the person in question")
+    interests = st.number_input("How many shared interests do you have with the person?")
+    overall = st.number_input("Put an overall score for the person")
+    reciprocate = st.number_input("Do you think the person will reciprocate your emotions?")
+    met_option = st.selectbox(
+    "Select your gender?",
+    ("Met before", "Not met"))
+    if option == "Met before":
+        gender = 1
+    else:
+        gender = 2
+    met = st.number_input("Have you met the person before?")
     rating = None
     if st.button("Enter"):
         rating = Prediction(([[gender, age, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met]]))
