@@ -17,7 +17,7 @@ st.set_page_config(
 )
 def main():
     st.title("FLAMES")
-    st.text("Put all the required inputs in integers(no decimals) between 0 to 10 (both inclusive)")
+    st.text("Put all the required inputs in integers(no decimals) between 0 to 10 both inclusive")
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
     option = st.selectbox(
     "Select your gender?",
@@ -38,11 +38,10 @@ def main():
     met_option = st.selectbox(
     "Select your gender?",
     ("Met before", "Not met"))
-    if option == "Met before":
-        gender = 1
+    if met_option == "Met before":
+        met = 1
     else:
-        gender = 2
-    met = st.number_input("Have you met the person before?")
+        met = 2
     rating = None
     if st.button("Enter"):
         rating = Prediction(([[gender, age, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met]]))
