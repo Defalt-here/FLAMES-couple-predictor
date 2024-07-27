@@ -11,9 +11,8 @@ st.set_page_config(
     page_title="FLAMES",
     page_icon="🔥",
     menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
+        'Report a bug': "https://github.com/Defalt-here/FLAMES-couple-predictor/issues",
+        'About': "Go ahead check if you're compatible with your crush!"
     }
 )
 def main():
