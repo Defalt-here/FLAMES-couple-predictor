@@ -7,7 +7,15 @@ def Prediction(input_data):
         return "Couple is compatible"
     else:
         return "Couple is not compatible"
-
+st.set_page_config(
+    page_title="FLAMES",
+    page_icon="🔥",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
 def main():
     st.title("FLAMES")
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
