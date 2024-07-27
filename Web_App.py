@@ -12,7 +12,10 @@ st.set_page_config(
     page_icon="🔥",
     menu_items={
         'Report a bug': "https://github.com/Defalt-here/FLAMES-couple-predictor/issues",
-        'About': "Go ahead check if you're compatible with your crush!"
+        'About': "Go ahead check if you're compatible with your crush!\
+        Training dataset found at: https://www.kaggle.com/datasets/mexwell/speed-dating/data\
+        Check me out on github at: https://github.com/Defalt-here\
+        "
     }
 )
 def main():
