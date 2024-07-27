@@ -20,7 +20,6 @@ def main():
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
     gender = st.number_input("Put gender")
     age = st.number_input("Put age")
-    income = st.number_input("Put income")
     attraction = st.number_input("Put attraction")
     sincerity = st.number_input("Put sincerity")
     intelligence = st.number_input("Put intelligence")
@@ -32,7 +31,7 @@ def main():
     met = st.number_input("Put met")
     rating = None
     if st.button("Enter"):
-        rating = Prediction(([[gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met]]))
+        rating = Prediction(([[gender, age, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met]]))
     st.success(rating)
     
 if __name__ == "__main__":
