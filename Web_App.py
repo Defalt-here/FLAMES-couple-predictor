@@ -18,7 +18,13 @@ st.set_page_config(
 def main():
     st.title("FLAMES")
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
-    gender = st.number_input("Put gender")
+    option = st.selectbox(
+    "Select your gender?",
+    ("Male", "Female"))
+    if option == "Male":
+        gender = 1
+    else:
+        gender = 0
     age = st.number_input("Put age")
     attraction = st.number_input("Put attraction")
     sincerity = st.number_input("Put sincerity")
