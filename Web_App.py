@@ -45,7 +45,7 @@ def main():
         met = 1
     else:
         met = 2
-    rating = None
+    rating = "Are you compatible? 🥁"
     if st.button("Enter"):
         rating = Prediction(([[gender, age, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met]]))
     st.success(rating)
