@@ -36,7 +36,7 @@ def main():
     overall = st.number_input("Put an overall score for the person")
     reciprocate = st.number_input("Do you think the person will reciprocate your emotions?")
     met_option = st.selectbox(
-    "Select your gender?",
+    "Have you met before?",
     ("Met before", "Not met"))
     if met_option == "Met before":
         met = 1
