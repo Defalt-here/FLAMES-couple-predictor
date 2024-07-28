@@ -24,7 +24,8 @@ st.set_page_config(
 def main():
     st.title("FLAMES")
     st.subheader("Check out your compatibility with your crush or your partner using the power of machine learning, maybe you'll fall in love maybe you'll breakup who knows?")
-    st.text("To get the training data for yourself check the about section! For more information check out my github on the top right")
+    st.text("Think of your target and rate them on these questions from 1-10")
+    st.markdown(```To get the training data for yourself check the about section! For more information check out my github on the top right```)
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
     option = st.selectbox(
     "Select your gender?",
@@ -50,7 +51,7 @@ def main():
     overall = st.number_input("Put an overall score for the person",min_value=0,max_value=10,step=1)
     reciprocate = st.number_input("Do you think the person will reciprocate your emotions?",min_value=0,max_value=10,step=1)
     rating = "Are you compatible? 🥁"
-    if st.button("Enter"):
+    if st.button("Check compatibility"):
         rating = Prediction([gender, age, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met])
     st.success(rating)
 if __name__ == "__main__":
