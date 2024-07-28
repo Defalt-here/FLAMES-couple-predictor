@@ -31,7 +31,7 @@ def main():
     else:
         gender = 0
     age = st.number_input("Enter your age")
-    attraction = st.number_input("On a scale of 1-10 how attracted you are to the person1")
+    attraction = st.number_input("How attracted you are to the person")
     sincerity = st.number_input("How sincere is the person in question?")
     intelligence = st.number_input("How intelligent is the person in question")
     funny = st.number_input("How funny is the person in question")
