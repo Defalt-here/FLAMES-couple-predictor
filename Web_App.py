@@ -6,8 +6,7 @@ def Prediction(input_data):
     npArray = np.array(input_data)
     array2D = npArray.reshape(1,11)
     Prediction = loaded_model.predict(array2D)
-    print(Prediction)
-    if loaded_model[0] == 1:
+    if Prediction[0] == 1:
         return "Couple is compatible"
     else:
         return "Couple is not compatible"
