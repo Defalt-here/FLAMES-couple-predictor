@@ -3,6 +3,10 @@ import pickle
 import streamlit as st
 loaded_model = pickle.load(open("newModel.sav","rb"))
 def Prediction(input_data):
+    npArray = np.array(input_data)
+    array2D = npArray.reshape(1,11)
+    Prediction = loaded_model.predict(array2D)
+    print(Prediction)
     if loaded_model[0] == 1:
         return "Couple is compatible"
     else:
@@ -48,7 +52,7 @@ def main():
         met = 2
     rating = "Are you compatible? 🥁"
     if st.button("Enter"):
-        rating = Prediction(([[gender, age, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met]]))
+        rating = Prediction([gender, age, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met])
     st.success(rating)
     
 if __name__ == "__main__":
