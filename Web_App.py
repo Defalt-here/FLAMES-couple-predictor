@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-loaded_model = pickle.load(open("model.sav","rb"))
+loaded_model = pickle.load(open("newModel.sav","rb"))
 def Prediction(input_data):
     if loaded_model[0] == 1:
         return "Couple is compatible"
