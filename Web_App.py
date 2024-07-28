@@ -23,7 +23,7 @@ st.set_page_config(
 )
 def main():
     st.title("FLAMES")
-    st.subheader("Check out your compatibility with your crush with the power of machine learning, or your partner maybe you'll fall in love maybe you'll breakup who knows?")
+    st.subheader("Check out your compatibility with your crush or your partner using the power of machine learning, maybe you'll fall in love maybe you'll breakup who knows?")
     st.text("To get the training data for yourself check the about section! For more information check out my github on the top right")
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
     option = st.selectbox(
