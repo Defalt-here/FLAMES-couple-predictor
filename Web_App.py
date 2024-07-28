@@ -41,7 +41,7 @@ def main():
         met = 1
     else:
         met = 2
-    age = st.number_input("Enter your age",min_value=0,max_value=10,step=1)
+    age = st.number_input("Enter your age",min_value=0,step=1)
     attraction = st.number_input("How attracted you are to the person",min_value=0,max_value=10,step=1)
     sincerity = st.number_input("How sincere is the person in question?",min_value=0,max_value=10,step=1)
     intelligence = st.number_input("How intelligent is the person in question",min_value=0,max_value=10,step=1)
