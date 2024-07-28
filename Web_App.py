@@ -16,14 +16,14 @@ st.set_page_config(
     page_icon="🔥",
     menu_items={
         'Report a bug': "https://github.com/Defalt-here/FLAMES-couple-predictor/issues",
-        'About': "Go ahead check if you're compatible with your crush!\
+        'About': "Go ahead check if you're compatible with your crush! with the power of ML\
         Training dataset found at: https://www.kaggle.com/datasets/mexwell/speed-dating/data"
 
     }
 )
 def main():
     st.title("FLAMES")
-    st.subheader("Check out your compatibility with your crush, or your partner maybe you'll fall in love maybe you'll breakup who knows?")
+    st.subheader("Check out your compatibility with your crush with the power of machine learning, or your partner maybe you'll fall in love maybe you'll breakup who knows?")
     st.text("To get the training data for yourself check the about section! For more information check out my github on the top right")
     # gender, age, income, attraction, sincerity, intelligence, funny, ambition, interests, overall, reciprocate, met
     option = st.selectbox(
